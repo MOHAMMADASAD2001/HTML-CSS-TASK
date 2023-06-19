@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: lightblue;
+            /* background:rgba(17, 34, 34, 0.695) */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        /* internal element */
+        .hh {
+            width: 200px;
+            height: 200px;
+            background: #333;
+            border: 10px solid #fff;
+
+        }
+
+        .hh p {
+            color: red;
+
+        }
+
+        .hh :nth-child(1) {
+            color: green;
+        }
+
+        .mm :nth-child(3) {
+            background-color: aqua;
+
+        }
+
+        .mm h2 {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hh">
+        <p>Group3</p>
+        <h1>G3</h1>
+    </div>
+
+    <h1>G3</h1>
+    <p>Group 3</p>
+    <h1 style="color:blue;">G3</h1>
+
+    <p style="color:red;">Group 3</p>
+    <!-- inline element -->
+
+    <div class="mm">
+        <ul>
+            <li>G1</li>
+            <li>G2</li>
+            <li>G3</li>
+            <li>G4</li>
+            <li>G5</li>
+        </ul>
+        <H2>hh</H2>
+    </div>
+</body>
+
+</html>
