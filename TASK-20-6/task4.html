@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .SR {
+            border: 2px dotted black;
+            display: inline-block;
+        }
+
+        .test {
+            display: inline-block;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        #te {
+            background-color: green;
+            top: 50px;
+        }
+
+        #tee {
+            background-color: green;
+            top: 25px;
+            left: 25px;
+            position: relative;
+        }
+
+        #teee {
+            background-color: green;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+
+        .absolute {
+            border: 2px dotted black;
+            display: inline-block;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Position:static</h4>
+    <div class="SR">
+        <div class="test">one</div>
+        <div class="test" id="te">Two</div>
+        <div class="test">Three</div>
+        <div class="test">Four</div>
+    </div>
+    <h4>Position:relative</h4>
+    <div class="SR">
+        <div class="test">one</div>
+        <div class="test" id="tee">Two</div>
+        <div class="test">Three</div>
+        <div class="test">Four</div>
+    </div>
+    <h4>Position:absolute</h4>
+    <div class="absolute">
+        <div class="test">one</div>
+        <div class="test" id="teee">Two</div>
+        <div class="test">Three</div>
+        <div class="test">Four</div>
+    </div>
+</body>
+
+</html>
