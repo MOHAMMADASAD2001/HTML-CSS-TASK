@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto;
+        }
+
+        .header {
+            background-color: aqua;
+            grid-column: 1/5;
+            height: 200px;
+            margin: 0 0 10px 0;
+        }
+
+        .leftside {
+            background-color: brown;
+            height: 100%;
+
+            margin-top: 5px;
+        }
+
+        .leftside div {
+            background-color: whitesmoke;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .midside {
+            height: 100%;
+            display: grid;
+            grid-column: 2/4;
+            margin: 5px;
+        }
+
+        .midside div {
+            height: 110px;
+            background-color: gray;
+            margin: 0 0 10px 0;
+        }
+
+        .rightside {
+            display: grid;
+            grid-column: 4/5;
+            background-color: green;
+            margin-top: 5px;
+            height: 100%;
+        }
+
+        @media screen and (max-width:480px) {
+            .leftside {
+                display: grid;
+                grid-template-columns: auto;
+                grid-column: 1/5;
+                padding-right: 20px;
+            }
+
+            .leftside div {
+                width: 100%;
+                height: 34px;
+            }
+
+            .midside {
+                grid-column: 1/5;
+                margin: 20px 0;
+            }
+
+            .midside div {
+                height: 50px;
+            }
+
+            .rightside {
+                grid-column: 1/5;
+                margin-top: 20px;
+                height: 100px;
+            }
+        }
+
+        @media screen and (min-width:482px) and (max-width:768px) {
+
+            .leftside {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-column: 1/5;
+                justify-content: space-evenly;
+                margin: 0;
+            }
+
+            .leftside div {
+                width: 150px;
+                height: 50px;
+            }
+
+            .midside {
+
+                grid-column: 1/5;
+                margin: 20px 0;
+            }
+
+            .rightside {
+                grid-column: 1/5;
+                margin-top: 20px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="header">1</div>
+        <div class="leftside">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="midside">
+            <div>44</div>
+            <div>33</div>
+            <div>22</div>
+            <div>11</div>
+            <div>44</div>
+        </div>
+        <div class="rightside">33</div>
+    </div>
+</body>
+
+</html>

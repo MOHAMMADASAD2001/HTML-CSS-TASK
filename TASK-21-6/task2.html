@@ -8,66 +8,80 @@
     
 .cont{
     display: grid;
-    grid-template-columns: auto auto auto ;
-    gap: 20px;
-    
-    padding: 15px;
+    grid-template-columns: repeat(12,auto) ;
+    row-gap: 5px;
+    column-gap: 20px;
+   
 }
 .grid1{
 background-color: gray;
-grid-column: 1/4;
-padding: 15px;
+grid-column: 1/13;
+
 }
 
 .grid2{
     background-color: blue;
-    grid-column: 1/3;
-    padding: 15px;
+    grid-column: 1/9;
+    
 }
 .grid3{
 background-color: rgb(57, 178, 225);
-padding: 15px;
+grid-column: 9/13;
+
 }
 .grid4{
     background-color: yellow;
-    padding: 15px;
+    
+    grid-column: 1/5;
 }
 .grid5{
     background-color: yellow;
-    padding: 15px;
+   
+    grid-column: 5/9;
 
 }
 .grid6{
     background-color: yellow;
-    padding: 15px;
+   
+    grid-column: 9/13;
     
 }
 .grid7{
     background-color: rgb(57, 178, 225);
-    padding: 15px;
+    
+    grid-column: 1/5;
     
 }
 .grid8{
 background-color: blue;
-grid-column: 2/4;
-    padding: 15px;
+grid-column: 5/13;
+  
 }
 
 .grid9{
     background: orange;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
     grid-column: 1/4;
-     gap: 20px;
-     padding: 15px;
+    
 }
 .grid10{
+    background-color: orange;
+    grid-column: 4/7;
+}
+.grid11{
+    background-color: orange;
+    grid-column: 7/10;
+}
+.grid12{
+    background-color: orange;
+    grid-column: 10/13;
+}
+.grid13{
     background-color: gray;
-    grid-column: 1/4;
-    padding: 15px;
+    grid-column: 1/13;
+    
 }
 .height{
-    height: 50px;
+    height: 100px;
 }
 
 
@@ -83,15 +97,12 @@ grid-column: 2/4;
     <div class="grid6 height"></div>
     <div class="grid7 height"></div>
     <div class="grid8 height"></div>
-    <div class="grid9 height">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-   
-    <div class="grid10 height"></div>
+    <div class="grid9 height"> </div>
+   <div class="grid10 height"></div>
+   <div class="grid11 height"></div>
+<div class="grid12 height"></div>
+    <div class="grid13 height"></div>
 </div>
-</div>
+
 </body>
 </html>

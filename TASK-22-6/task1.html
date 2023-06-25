@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            /* height: 150px; */
+        }
+
+        .head {
+            grid-column: 1/4;
+            background-color: chartreuse;
+            height: 200px;
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column: 1/4;
+            gap: 0 10px;
+        }
+
+        .section div {
+            background-color: aqua;
+            width: 100%;
+            height: 450px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column: 1/4;
+            gap: 0 10px;
+        }
+
+        .footer div {
+            background-color: gray;
+            height: 200px;
+        }
+
+        @media screen and (max-width:480px) {
+            .head {
+                height: 150px;
+            }
+
+            .section {
+                grid-template-columns: auto;
+                gap: 5px;
+            }
+
+            .section div {
+                height: 100px;
+            }
+
+            .footer {
+                grid-template-columns: auto;
+                gap: 5px;
+            }
+
+            .footer div {
+
+                height: 100px;
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            .head {
+                height: 150px;
+            }
+
+            .section {
+                grid-template-columns: auto;
+                gap: 5px;
+            }
+
+            .section div {
+                height: 100px;
+            }
+
+            .footer {
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                gap: 10px 15px;
+            }
+
+            .footer div {
+                height: 75px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="head">1</div>
+        <div class="section">
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="footer">
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </div>
+</body>
+
+</html>
