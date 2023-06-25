@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            left: 200px;
+            animation: test infinite;
+            border-radius: 20px;
+            /* animation-name: test; */
+            animation-duration: 11s;
+            /* margin-left: 400px; */
+        }
+
+        @keyframes test {
+            0% {
+
+                left: 200px;
+                top: 0px;
+            }
+
+            30% {
+                background: linear-gradient(green, rgb(17, 232, 247));
+            }
+
+            25% {
+
+                left: 800px;
+                top: 0px;
+            }
+
+            48% {
+                background: linear-gradient(rgb(12, 161, 174), blue);
+            }
+
+            50% {
+
+                left: 800px;
+                top: 400px;
+            }
+
+            60% {
+                background: linear-gradient(blue, yellow);
+            }
+
+            70% {
+                background-color: yellow;
+            }
+
+            75% {
+
+                left: 0px;
+                top: 400px;
+            }
+
+            80% {
+                background-color: rgb(149, 69, 0);
+            }
+
+            90% {
+
+                left: 0px;
+                top: 0px;
+            }
+
+            95% {
+                background: linear-gradient(red, green);
+            }
+
+            100% {
+                background-color: green;
+                top: 0px;
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

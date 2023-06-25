@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 25px;
+            background: black;
+            transition: width 4s, height 6s;
+
+        }
+
+        div:hover {
+            width: 300px;
+            height: 400px;
+        }
+
+        .linear {
+            transition-timing-function: linear;
+            animation-name: tt;
+            animation-duration: 4s;
+            background: red;
+            margin: 20px;
+            color: white;
+        }
+
+        .delay {
+            transition-delay: 2s;
+            background: blue;
+            margin: 20px;
+        }
+
+        @keyframes tt {
+            form {
+                width: 200px;
+                background-color: rgb(36, 132, 132);
+            }
+
+            to {
+                width: 500px;
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="linear">linear</div>
+    <div class="delay">delay</div>
+</body>
+
+</html>
