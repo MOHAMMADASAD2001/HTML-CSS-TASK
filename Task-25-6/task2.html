@@ -11,7 +11,7 @@
             width: 150px;
             height: 150px;
             position: relative;
-            left: 400px;
+            left: 200px;
             animation: test infinite;
             border-radius: 20px;
             /* animation-name: test; */
@@ -21,33 +21,63 @@
 
         @keyframes test {
             0% {
-                background: green;
-                left: 400px;
+
+                left: 200px;
                 top: 0px;
+            }
+
+            30% {
+                background: linear-gradient(green, rgb(17, 232, 247));
             }
 
             25% {
-                background: linear-gradient(rgb(45, 150, 173), rgb(0, 0, 250));
+
                 left: 800px;
                 top: 0px;
+            }
+
+            48% {
+                background: linear-gradient(rgb(12, 161, 174), blue);
             }
 
             50% {
-                background: linear-gradient(rgb(0, 17, 122), rgb(104, 110, 20));
+
                 left: 800px;
-                top: 500px;
+                top: 400px;
+            }
+
+            60% {
+                background: linear-gradient(blue, yellow);
+            }
+
+            70% {
+                background-color: yellow;
             }
 
             75% {
-                background-color: rgb(111, 130, 6);
+
                 left: 0px;
-                top: 500px;
+                top: 400px;
+            }
+
+            80% {
+                background-color: rgb(149, 69, 0);
+            }
+
+            90% {
+
+                left: 0px;
+                top: 0px;
+            }
+
+            95% {
+                background: linear-gradient(red, green);
             }
 
             100% {
-                background-color: rgb(235, 114, 15);
-                left: 0px;
+                background-color: green;
                 top: 0px;
+                left: 200px;
             }
         }
     </style>
