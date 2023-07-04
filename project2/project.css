@@ -1,0 +1,489 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 20px;
+    padding: 9px 45px 9px 50px;
+    color: #606C5D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.unorder {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.nav {
+    padding: 0px 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #606C5D;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav a:hover {
+    background-color: #F7E6C4;
+    transition: 0.5s;
+}
+
+.information-pic {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #F7E6C4;
+}
+
+.information {
+    color: #606C5D;
+    margin-left: 400px;
+    margin-top: 300px;
+}
+
+.information input {
+    width: 300px;
+    height: 100px;
+}
+
+.pic {
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 500px;
+}
+
+.information-pic input {
+    background-color: #606C5D;
+    color: white;
+    font-size: x-large;
+}
+
+.Certificate {
+    color: #606C5D;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.info {
+    color: #606C5D;
+    margin-left: 250px;
+    margin-top: 120px;
+}
+
+.Certificate img {
+    width: 200px;
+    height: 200px;
+    margin-left: 150px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+
+
+.text {
+    font-size: x-large;
+}
+
+.Skills {
+    background-color: #F7E6C4;
+    color: #606C5D;
+    height: 500px;
+}
+
+.sub-skils {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.label {
+    margin-left: 100px;
+}
+
+.soft {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+    transition: width 2s, height 2s;
+    transition-delay: 1s;
+}
+
+.soft:hover {
+    width: 600px;
+    height: 350px;
+}
+
+.technical {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+    transition: width 2s, height 2s;
+    transition-delay: 1s;
+}
+
+.technical:hover {
+    width: 600px;
+    height: 350px;
+}
+
+.text-box {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.text-box a {
+    color: #606C5D;
+}
+
+.references {
+    color: #606C5D;
+    margin: 30px;
+}
+
+.references h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.image img {
+    width: 100px;
+}
+
+.Trainer {
+
+    width: 20px;
+    margin-right: 70px;
+    margin-top: -270px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.text-references {
+    margin: 50px;
+    margin-left: 300px;
+}
+
+.icon {
+    width: 70px;
+    margin: 20px 20px;
+}
+
+.Project {
+    background-color: #F7E6C4;
+    color: #606C5D;
+    height: 600px;
+}
+
+.sub-Project {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.label-one {
+    margin-left: 100px;
+}
+
+.Wireframe-mockup {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+    transition: width 2s, height 2s;
+    transition-delay: 1s;
+}
+
+.img-project {
+    margin: 20px 10px 20px 10px;
+    width: 200px;
+    height: 100px;
+}
+
+.Wireframe-mockup:hover {
+    width: 570px;
+    height: 350px;
+}
+
+.Portfolio {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+    transition: width 2s, height 2s;
+    transition-delay: 1s;
+}
+
+.Portfolio:hover {
+    width: 570px;
+    height: 350px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #606C5D;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.left {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.right {
+    margin-top: 20px;
+    margin-right: 250px;
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.bottom img {
+    width: 75px;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.copy {
+    text-align: center;
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .logo {
+        margin-right: 10px;
+    }
+    .nav {
+        margin-left: 10px;
+    }
+    .information {
+        margin-left: 50px;
+        margin-top: 270px;
+    }
+    .pic {
+        margin-top: 100px;
+        margin-left: 150px;
+    }
+    .info {
+        margin-left: 130px;
+        margin-top: 100px;
+    }
+    .Certificate img {
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+        margin-top: 200px;
+        margin-bottom: 75px;
+    }
+    .label {
+        margin-left: 50px;
+    }
+    .soft {
+        width: 350px;
+        margin-top: 40px;
+    }
+    .Skills {
+        width: 800px;
+    }
+    .soft:hover {
+        width: 400px;
+
+    }
+    .technical {
+        width: 350px;
+        margin-top: 40px;
+    }
+    .technical:hover {
+        width: 400px;
+    }
+    .text-references {
+        margin: 30px 0px 5px 30px;
+        margin-left: 10px;
+    }
+    .Trainer {
+        width: 20px;
+        margin-right: 600px;
+        margin-top: 5px;
+    }
+    .label-one h1 {
+        margin-top: 10px;
+    }
+    .Project {
+        width: 790px;
+    }
+    .Wireframe-mockup {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .Wireframe-mockup:hover {
+        width: 390px;
+    }
+    .Portfolio {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .Portfolio:hover {
+        width: 390px;
+    }
+    .img-project {
+        margin: 20px 10px 20px 10px;
+        width: 120px;
+        height: 100px;
+    }
+    .footer {
+        width: 790px;
+    }
+    .left {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .right {
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+    .bottom img {
+        width: 40px;
+        margin-left: 75px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo {
+ margin-right: 5px;
+    }
+    .nav {
+        margin-left: 5px;
+    }
+    .information-pic {
+        width: 850px;
+    }
+    .information {
+        margin-left: 100px;
+        margin-top: 300px;
+    }
+    .pic {
+        margin-top: 130px;
+        margin-left: 75px;
+    }
+    .info {
+        margin-left: 75px;
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .text {
+        font-size: x-small;
+        margin-top: 10px;
+    }
+    .Certificate img {
+        width: 100px;
+        height: 100px;
+        
+        margin-left: 200px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .Skills {
+        width: 750px;
+    }
+    .label {
+        margin-left: 50px;
+    }
+    .Skills {
+        width: 770px;
+    }
+    .soft {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .soft:hover {
+        width: 350px;
+    }
+    .technical {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .technical:hover {
+        width: 350px;
+    }
+    .text-references {
+        margin: 30px 0px 5px 30px;
+        margin-left: 10px;
+    }
+    .Trainer {
+        width: 20px;
+        margin-right: 600px;
+        margin-top: 5px;
+    }
+    .Project {
+        width: 750px;
+        height: 400px;
+    }
+    .Wireframe-mockup {
+        height: 240px;
+        width: 290px;
+        margin-top: 30px;
+    }
+    .Wireframe-mockup:hover {
+        width: 350px;
+        height: 250px;
+    }
+    .Portfolio {
+        width: 290px;
+        margin-top: 30px;
+        height: 240px;
+        margin-right: 50px;
+    }
+    .Portfolio:hover {
+        width: 350px;
+        height: 250px;
+    }
+    .img-project {
+        width: 60px;
+        height: 50px;
+    }
+    .footer {
+        width: 750px;
+    }
+    .left {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .right {
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+    .bottom img {
+        width: 40px;
+        margin-left: 75px;
+    }
+}
