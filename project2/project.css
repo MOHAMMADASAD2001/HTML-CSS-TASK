@@ -4,291 +4,238 @@
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    justify-content: space-between;
+#navbarNav {
+    justify-content: end;
 }
-
-.logo {
-    margin-top: 20px;
-    padding: 9px 45px 9px 50px;
-    color: #606C5D;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.unorder {
-    list-style: none;
-    display: flex;
-    margin-top: 20px;
-    margin-right: 60px;
-}
-
-.nav {
-    padding: 0px 15px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #606C5D;
-    font-size: 25px;
-    padding: 10px 20px 10px 20px;
-}
-
-.nav a:hover {
+.nav-link:hover {
     background-color: #F7E6C4;
     transition: 0.5s;
 }
-
 .information-pic {
     display: grid;
     grid-template-columns: auto auto;
     background-color: #F7E6C4;
+    align-items: center;
+    justify-content:space-around;
+    height: 750px;
+    grid-column: 1/6;
 }
-
 .information {
     color: #606C5D;
-    margin-left: 400px;
-    margin-top: 300px;
-}
 
+}
 .information input {
-    width: 300px;
+    width: 200px;
     height: 100px;
 }
+ .pic img {
 
-.pic {
-    margin-top: 100px;
-    margin-left: 300px;
-    width: 500px;
-}
-
+    width: 300px;
+    height: 400px;
+} 
 .information-pic input {
     background-color: #606C5D;
     color: white;
     font-size: x-large;
 }
-
 .Certificate {
     color: #606C5D;
     display: grid;
     grid-template-columns: auto auto;
+    grid-column: 1/6;
+    justify-content: space-around;
 }
-
 .info {
     color: #606C5D;
-    margin-left: 250px;
-    margin-top: 120px;
+    grid-template-columns: auto;
+    
 }
 
-.Certificate img {
+.Certificate .img-cer img {
     width: 200px;
     height: 200px;
-    margin-left: 150px;
-    margin-top: 200px;
     margin-bottom: 100px;
+    grid-template-columns: auto;
+    margin-top: 70px;
 }
-
-
-
 .text {
     font-size: x-large;
 }
-
 .Skills {
     background-color: #F7E6C4;
     color: #606C5D;
-    height: 500px;
+    height: 730px;
+    grid-column: 1/6;
 }
-
 .sub-skils {
     display: flex;
     justify-content: space-evenly;
 }
-
 .label {
-    margin-left: 100px;
+    text-align: center;
 }
-
 .soft {
     background-color: white;
     width: 500px;
-    height: 300px;
-    margin-top: 100px;
-    transition: width 2s, height 2s;
-    transition-delay: 1s;
+    margin-top: 30px;
+    transition: width 2s, height 2s;  
 }
-
-.soft:hover {
-    width: 600px;
-    height: 350px;
-}
-
 .technical {
     background-color: white;
     width: 500px;
-    height: 300px;
-    margin-top: 100px;
+    margin-top: 30px;
     transition: width 2s, height 2s;
-    transition-delay: 1s;
+    display: grid;
+    grid-template-columns: auto;
 }
-
-.technical:hover {
-    width: 600px;
-    height: 350px;
+.skill-box{
+    height: 600px;
 }
-
 .text-box {
     margin-left: 20px;
     text-align: center;
+    margin-top: 10px;
 }
-
 .text-box a {
     color: #606C5D;
 }
-
 .references {
     color: #606C5D;
-    margin: 30px;
+   display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column: 1/6;
+    height: 600px;
+    justify-content: space-around;
 }
-
-.references h1 {
+ .re-lable {
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
     margin-bottom: 20px;
+    text-align: center;
+    grid-column: 1/4;
 }
-
-.image {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
+.Trainer img {
+    width: 500px;
+    height: 300px;
 }
-
-.image img {
-    width: 100px;
-}
-
-.Trainer {
-
-    width: 20px;
-    margin-right: 70px;
-    margin-top: -270px;
-}
-
-.images {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.text-references {
-    margin: 50px;
-    margin-left: 300px;
-}
-
 .icon {
     width: 70px;
     margin: 20px 20px;
 }
-
 .Project {
     background-color: #F7E6C4;
     color: #606C5D;
-    height: 600px;
+    padding: 2%;
+    grid-column: 1/6;
+    
 }
-
 .sub-Project {
     display: flex;
     justify-content: space-evenly;
 }
-
 .label-one {
-    margin-left: 100px;
+    text-align: center;
 }
-
 .Wireframe-mockup {
     background-color: white;
-    width: 500px;
-    height: 300px;
-    margin-top: 100px;
+    width: 40%;
+    margin-top: 30px;
     transition: width 2s, height 2s;
-    transition-delay: 1s;
 }
-
 .img-project {
     margin: 20px 10px 20px 10px;
     width: 200px;
     height: 100px;
 }
-
 .Wireframe-mockup:hover {
-    width: 570px;
-    height: 350px;
+    scale: 1.1;
+   
 }
-
 .Portfolio {
     background-color: white;
-    width: 500px;
-    height: 300px;
-    margin-top: 100px;
+    width: 40%;
+    margin-top: 30px;
     transition: width 2s, height 2s;
-    transition-delay: 1s;
 }
-
+.skill-box:hover{
+    border: #606C5D  2px solid;
+}
 .Portfolio:hover {
-    width: 570px;
-    height: 350px;
+    scale: 1.1;
 }
-
 .footer {
-    width: 100%;
     background-color: #606C5D;
     color: white;
     display: grid;
     grid-template-columns: auto auto;
+    grid-column: 1/6;
+    width: 100%;
 }
-
 .left {
     margin-left: 20px;
     margin-top: 20px;
 }
-
 .right {
     margin-top: 20px;
     margin-right: 250px;
 }
-
 .right a {
     color: white;
     text-decoration: none;
 }
-
 .bottom {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    
 }
-
 .bottom img {
     width: 75px;
     margin-top: 50px;
     margin-left: 150px;
     margin-bottom: 30px;
 }
-
+.bottom h3{
+    margin-top: 50px;
+}
 .copy {
     text-align: center;
 }
-
 @media screen and (min-width:481px) and (max-width:768px) {
+    .skill-box{
+        height: 600px;
+    }
+    body{
+        width: 800px;
+    }
+    header {
+        display: block;
+        width: 100%;
+        background-color: white;
+        justify-content: space-between;
+    }
     .logo {
         margin-right: 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
     }
-    .nav {
-        margin-left: 10px;
+    .nav a{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    
+    .information-pic{
+        grid-column: 1/3;
+        height: 800px;
     }
     .information {
         margin-left: 50px;
         margin-top: 270px;
+    }
+    .references{
+        height: 780px;
+        display: block;
+      margin-left: 130px;
     }
     .pic {
         margin-top: 100px;
@@ -297,35 +244,39 @@ header {
     .info {
         margin-left: 130px;
         margin-top: 100px;
+        display: grid;
+        grid-column: 1/6;
     }
     .Certificate img {
         width: 200px;
         height: 200px;
-        margin-right: 20px;
-        margin-top: 200px;
-        margin-bottom: 75px;
+        
+        margin-bottom: 75px; */
+        margin-left: 130px;
+        display: grid;
+        grid-template-columns: auto;
     }
     .label {
         margin-left: 50px;
     }
     .soft {
-        width: 350px;
+        width: 40%;
         margin-top: 40px;
     }
     .Skills {
-        width: 800px;
+            width: 100%;
+            height: 730px;
     }
-    .soft:hover {
-        width: 400px;
-
-    }
+    
+   
     .technical {
-        width: 350px;
+       
+        width: 40%;
         margin-top: 40px;
+        height: auto;
+       
     }
-    .technical:hover {
-        width: 400px;
-    }
+  
     .text-references {
         margin: 30px 0px 5px 30px;
         margin-left: 10px;
@@ -347,6 +298,9 @@ header {
     }
     .Wireframe-mockup:hover {
         width: 390px;
+    }
+    .text-box{
+        margin-top: 10px;
     }
     .Portfolio {
         width: 300px;
@@ -375,93 +329,168 @@ header {
         width: 40px;
         margin-left: 75px;
     }
+    
+    
 }
-
 @media screen and (max-width:480px) {
-    .logo {
- margin-right: 5px;
+   
+    .skill-box {
+        height: 450px;
     }
-    .nav {
+    /* .logo {
+        font-size: 12px;
+        margin-bottom: 10px;
+    } */
+    /* .nav {
         margin-left: 5px;
-    }
+    } */
+    /* .nav a{
+        font-size: 15px;
+        margin-top: 5px;
+    } */
     .information-pic {
-        width: 850px;
+        display: grid;
+        grid-template-columns: auto;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .pic img {
+        margin-top: 5px;
+        width: 200px;
+        height: 382px;
     }
     .information {
-        margin-left: 100px;
-        margin-top: 300px;
+        padding-left: 40px;
+    padding-top: 20px;
+
     }
+    .information input {
+        width: 143px;
+        height: 65px;
+        font-size: 15px;
+    }
+    .information-pic > div{
+        background-color: #F7E6C4;
+    }
+    .information h2{
+        font-size: 15px;
+    }
+    .information h1{
+    
+    font-size: 18px;}
     .pic {
-        margin-top: 130px;
         margin-left: 75px;
     }
     .info {
-        margin-left: 75px;
         margin-top: 50px;
-        margin-left: 150px;
+padding-left: 60px;        
+    }
+    .img-cer {
+        padding-left: 51px;
     }
     .text {
-        font-size: x-small;
+        font-size: medium;
         margin-top: 10px;
+        margin-bottom: 70px;
+    }
+    .Certificate{
+        display: grid;
+        grid-template-columns: auto;
     }
     .Certificate img {
         width: 100px;
         height: 100px;
-        
-        margin-left: 200px;
-        margin-top: 150px;
-        margin-bottom: 50px;
     }
     .Skills {
-        width: 750px;
+        margin-left: 0px;
+        grid-column: 1/6;
+        display: flex;
+        flex-direction: column;
+        height: 1070px;
     }
-    .label {
-        margin-left: 50px;
+   
+    .sub-skils {
+        flex-direction: column;
     }
-    .Skills {
-        width: 770px;
+    
+    .footer {
+        grid-template-columns: auto;
+        font-size: 12px;
+    }  
+    .footer h2 {
+        font-size: 12px;
+    }  
+    .bottom h3{
+        font-size: 9px ;
+        margin: 0;
     }
+    
     .soft {
         width: 300px;
         margin-top: 40px;
+        display: block;
     }
     .soft:hover {
         width: 350px;
     }
     .technical {
-        width: 300px;
+        width: 100%;
         margin-top: 40px;
     }
     .technical:hover {
         width: 350px;
     }
+    #references{
+        display: flex;
+        flex-direction: column;
+    }
+    .references{
+
+        margin-left: 0px;
+    }
     .text-references {
-        margin: 30px 0px 5px 30px;
-        margin-left: 10px;
+     padding-left: 30px;
+    }
+    .text-references h3 {
+        font-size: 12px;
+    }
+    .text-references img{
+width: 40px;
     }
     .Trainer {
-        width: 20px;
-        margin-right: 600px;
-        margin-top: 5px;
+        width: 100%;
+   
     }
-    .Project {
-        width: 750px;
-        height: 400px;
+    .Trainer>img{
+        width: 100%;
+        height: 60%;
+
+
+    }
+
+    .Project{
+        height: 850px;
+    }
+    .sub-Project {
+        display:block;
+       
+        align-items: center;
+       
     }
     .Wireframe-mockup {
-        height: 240px;
-        width: 290px;
-        margin-top: 30px;
+        height: auto;
+        width: 100%;
+        margin-top: 0;
     }
     .Wireframe-mockup:hover {
         width: 350px;
         height: 250px;
     }
     .Portfolio {
-        width: 290px;
-        margin-top: 30px;
-        height: 240px;
-        margin-right: 50px;
+        height: auto;
+        width: 100%;
+        margin-top: 0;
     }
     .Portfolio:hover {
         width: 350px;
@@ -471,19 +500,42 @@ header {
         width: 60px;
         height: 50px;
     }
-    .footer {
-        width: 750px;
-    }
+    
     .left {
-        margin-left: 15px;
+        margin-left: 0px;
         margin-top: 10px;
     }
     .right {
         margin-top: 10px;
         margin-right: 100px;
     }
-    .bottom img {
-        width: 40px;
-        margin-left: 75px;
+    .bottom-img{
+
     }
+    .bottom img {
+        width: 15px;
+        margin-left: 4px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer{
+    text-align: center;
+    }
+    .right {
+        margin-top: 0px;
+        margin-right: 0;
+    }
+    .soft {
+        width: 100%;
+        margin-top: 16px;
+        display: block;
+        font-size: 1px;
+    }
+    .text-box {
+        margin-left: 0;
+    }
+    
+    
+   
 }
